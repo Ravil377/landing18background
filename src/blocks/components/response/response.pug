@@ -1,0 +1,18 @@
+mixin response()
+    .response
+        .response__title Apply for job
+        form(action='/', method='POST', data-name="response").response__form.js-submit__btn
+            input(type="text", placeholder="Name").response__input
+            input(type="tel", placeholder="Phone").response__input
+            input(type="email", placeholder="E-mail").response__input
+            label.response__input-wrapper
+                input(name="file", type='file').response__input-file
+                span.response__file-content
+                    span.contacts__file-mobil Upload a photo or file
+                    span.response__file-text Drag your resume here or
+                    span.response__file-btn upload
+                span.response__file
+            input(type="text", placeholder="Or insert a link to your resume").response__input
+            .response__bottom
+                +btn('Send', type="submit").response__btn
+                .response__agreement By clicking on the "Send" button, you agree to the processing of personal data

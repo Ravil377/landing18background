@@ -1,0 +1,56 @@
+mixin page-girl-video()
+    .container 
+        .container__movie.swiper
+            ul.movie__list.swiper-wrapper 
+
+        .info
+            .info__container 
+                p.info__name
+                p.info__subscribers
+            .info__foto 
+                img(src="./img/content/1x1.png" alt="pic" class="js-avatar")
+        header.header 
+            .logo 
+                svg(class='logo__img')
+                    use(xlink:href='img/symbols.svg#logo')     
+        .container__buttons.container__buttons_mobil
+            button.button.button__prev.js-button.js-button-prev
+                p Previous girl
+            button.button.button__next.js-button.js-button-next
+                p Next girl   
+        .sidebar
+            main.main 
+                button.modal__close-button 
+                h1.title Do you want to have a video chat with <span class="js-title"></span>
+                p.desc Sign up to continue
+                p.desc.desc_modal Sign up to see more girls
+                form(action="/" method="POST").form
+                    .placeholder-container.placeholder-container__email
+                        input(type="email" placeholder=" " required)
+                        label Enter your email
+                    .placeholder-container.placeholder-container__password
+                        input(type="password" placeholder=" " required)
+                        label Enter your password
+                    button(type="submit").form__button sign in
+                .container__buttons 
+                    button.button.button__prev.js-button-prev.js-button
+                        p Previous girl
+                    button.button.button__next.js-button-next.js-button
+                        p Next girl
+            footer.footer 
+                ul.term__list 
+                    li.term__item
+                        a(href="#").term__link Desabonarse
+                    li.term__item
+                        a(href="#").term__link Política de privacidad 
+                    li.term__item
+                        a(href="#").term__link Términos y condiciones
+            <template id="movieCard">
+                li(data-id="" data-name="" data-fullname="" data-subscribe="").movie__item.swiper-slide.movie
+                    <video autoplay muted loop id="myVideo" class="video">
+                        <source src="" type="video/mp4" class="js-video-src">
+                        Your browser does not support HTML5 video.
+                    </video>
+            </template> 
+
+                

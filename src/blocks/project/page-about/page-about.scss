@@ -1,0 +1,121 @@
+.about {
+  padding: 0 $offsetMobil;
+  padding-top: 47px;
+  @media (min-width: $screen-md) {
+      padding: 0 $offset;
+      padding-top: 94px;
+  }
+}
+.about__title {
+  max-width: 815px;
+  margin-bottom: 57px;
+  @media (min-width: $screen-lg) {
+      margin-bottom: 75px;
+  }
+}
+.about__cards {
+  background: #f4f7fa;
+  @include ul-none();
+  display: flex;
+  margin: -6px;
+  flex-direction: column;
+  @media (min-width: $screen-lg) {
+      flex-direction: row;
+  }
+}
+.about__cards_mr {
+  margin: -6px;
+  margin-bottom: 41px;
+  @media (min-width: $screen-sm) {
+      margin-bottom: 129px;
+  }
+  @media (min-width: $screen-lg) {
+      margin: -16px;
+      margin-bottom: 129px;
+  }
+}
+.about__cards-item {
+  text-align: center;
+  border-radius: 4px;
+  padding: 29px 24px;
+  margin: 6px;
+  @media (min-width: $screen-lg) {
+      margin: 16px;
+      max-width: 280px;
+      width: 100%;
+  }
+}
+.about__cards-item-pic {
+  object-fit: cover;
+  width: 40px;
+  height: 46px;
+  margin-bottom: 7px;
+}
+.about__cards-title {
+  font-family: "PT Sans";
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 8px;
+  color: $main-color;
+  @media (min-width: $screen-lg) {
+      font-size: 18px;
+      line-height: 28px;
+  }
+}
+
+.about__cards-desc {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $main-color;
+  text-align: center;
+}
+.about__cards-list {
+  @include ul-none();
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $screen-md) {
+      flex-direction: row;
+  }
+}
+.about__card {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 52px;
+  @media (min-width: $screen-md) {
+      margin-bottom: 0;
+      padding-bottom: 13px;
+      max-width: 385px;
+      &:last-child {
+          border-right: none;
+      }
+  }
+}
+.about__card-title {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 65px;
+  line-height: 64px;
+  color: $main-color;
+  margin-bottom: 19px;
+  @media (min-width: $screen-lg) {
+      font-size: 90px;
+  }
+}
+.about__card-desc {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: $main-color;
+  text-transform: uppercase;
+  @media (min-width: $screen-md) {
+      font-size: 20px;
+      line-height: 24px;
+  }
+}

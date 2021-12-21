@@ -1,0 +1,65 @@
+mixin page-footer()
+  footer.footer
+    .container
+      .footer__container.content
+          .footer__left
+            .footer__logo-container
+              a(href="#")
+                svg(class=`footer__logo`)
+                  use(xlink:href="img/symbols.svg#logo")
+            nav.footer__nav
+              ul.footer__list 
+                li.footer__item 
+                  a(href="#about") Who we are
+                li.footer__item 
+                  a(href="#activity") What we do
+                li.footer__item
+                  a(href="#products") Products
+                li.footer__item   
+                  a(href="#invest") Investments
+                li.footer__item  
+                  a(href="#career") Career
+                li.footer__item   
+                  a(href="#contacts") Contacts
+            .footer__right_mobil
+              .footer__agreement
+                a(href="#") Privacy policy
+                a(href="#") Coolie policy
+                a(href="#") Terms and conditions
+              .footer__social-menu
+                ul.footer__socials
+                  li.footer__social
+                    a(href="#").footer__social-link
+                      svg(class=`footer__img`)
+                        use(xlink:href="img/symbols.svg#twitter")
+                  li.footer__social
+                    a(href="#").footer__social-link
+                      svg(class=`footer__img footer__img_in`)
+                        use(xlink:href="img/symbols.svg#linkedin")
+                  li.footer__social
+                    a(href="#").footer__social-link
+                      svg(class=`footer__img`)
+                        use(xlink:href="img/symbols.svg#facebook")                       
+            p.footer__logo-text Major supplier of Russian petrochemicals to global markets
+            p.footer__copyright &copy; 2021 Avestra Group Holding Ltd. Website by Group of companies SNEG
+          .footer__right 
+            .footer__agreement
+              p.footer__menu-title USEFUL LINKS
+              a(href="#").js-agreement Privacy policy
+              a(href="#") Coolie policy
+              a(href="#") Terms and conditions
+            .footer__social-menu
+              p.footer__menu-title CONNECT WITH US
+              ul.footer__socials
+                li.footer__social
+                  a(href="#").footer__social-link
+                    svg(class=`footer__img`)
+                      use(xlink:href="img/symbols.svg#twitter")
+                li.footer__social
+                  a(href="#").footer__social-link
+                    svg(class=`footer__img footer__img_in`)
+                      use(xlink:href="img/symbols.svg#linkedin")
+                li.footer__social
+                  a(href="#").footer__social-link
+                    svg(class=`footer__img`)
+                      use(xlink:href="img/symbols.svg#facebook")                      

@@ -1,0 +1,11 @@
+mixin title(category, title, desc)
+  -
+    var category = category || '';
+    var title = title || '';
+    var desc = desc || '';
+
+  .title&attributes(attributes)
+    p(class=`title__category ${!desc ? 'title__category_blue' : ''}`)!= category
+    h2(class="title__heading")!= title
+    if(desc)
+      p(class="title__desc")!= desc

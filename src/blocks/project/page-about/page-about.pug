@@ -1,0 +1,41 @@
+mixin page-about()
+  section(id="about").about
+    .container
+      .content
+        +title('Who we are', `Avestra <span>at a glance</span>`, 'Avestra’s business model is to simplify the complexities of global supply chains in the petrochemicals market. For more than 25 years we have been helping customers from around the world to develop and grow their businesses by aligning them with best value suppliers, and by lowering the barriers of delivery. Our commitment is to provide customers with a favorable end-to-end offer that clearly focuses on value, and exceptional service and performance').about__title
+        ul.about__cards.about__cards_mr
+          li.about__cards-item
+            svg(class=`about__cards-item-pic`)
+              use(xlink:href="img/symbols.svg#experience")
+            .about__cards-title Strong international team
+            .about__cards-desc All our traders have more than 10 years experience in the industry, and have acquired a deep understanding of their specialist product markets
+          li.about__cards-item
+            svg(class=`about__cards-item-pic`)
+              use(xlink:href="img/symbols.svg#portfolio")
+            .about__cards-title Balanced product portfolio
+            .about__cards-desc We have the portfolio of wide range products. Most of goods are Russian origin and purchased from the leading Russian producers
+          li.about__cards-item
+            img(src="img/content/services.png", alt="Services").about__cards-item-pic
+            .about__cards-title Additional services
+            .about__cards-desc Our standards ensure efficient management of operational and financial risks by using factoring, hedging and insurance
+          li.about__cards-item
+            svg(class=`about__cards-item-pic`)
+              use(xlink:href="img/symbols.svg#hand")
+            .about__cards-title Long-term partners
+            .about__cards-desc Long-term relationships with suppliers and service companies ensure supply guarantees and competitively low prices
+        ul.about__cards-list
+          li.about__card
+            .about__card-title &gt;50
+            .about__card-desc products
+          li.about__card
+            .about__card-title 40
+            .about__card-desc suppliers
+          li.about__card
+            .about__card-title &gt;300
+            .about__card-desc clients
+          li.about__card
+            .about__card-title 10
+            .about__card-desc offices
+          li.about__card
+            .about__card-title 80
+            .about__card-desc employees

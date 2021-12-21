@@ -1,0 +1,8 @@
+mixin subtitle(title, desc)
+  -
+    var title = title || '';
+    var desc = desc || '';
+
+  .subtitle&attributes(attributes)
+    h3(class="subtitle__heading")!= title
+    p(class="subtitle__desc")!= desc

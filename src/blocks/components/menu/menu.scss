@@ -1,0 +1,79 @@
+.menu {
+  @include ul-none();
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $screen-xl) {
+    flex-direction: row;
+  }
+}
+.menu__item {
+  position: relative;
+  height: 57px;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: $time;
+
+  &::after {
+    top: 57%;
+    transform: rotate(-45deg);
+  }
+  &::before {
+    top: 43%;
+    transform: rotate(45deg);
+  }
+
+  @media (min-width: $screen-xl) {
+    width: auto;
+    border-bottom: none;
+    margin-right: 25px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  @media (min-width: $screen-xxl) {
+    margin-right: 2.18rem;
+  }
+}
+.menu__item::before,
+.menu__item::after {
+  position: absolute;
+  width: 12px;
+  height: 2px;
+  right: 0;
+  background-color: #FFBB4D;
+  @media (max-width: $screen-xl) {
+    content: '';
+  }
+}
+
+.menu__link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  color: #fff;
+  &:hover {
+    color: #FFBB4D;
+  }
+  &:active {
+    color: #EB9100;
+  }
+  @media (min-width: $screen-xxl) {
+    font-size: 1rem;
+    line-height: 1.25rem;    
+  }
+}
+.menu__burger-close-btn {
+  cursor: pointer;
+  transition: $time;
+  &:hover {
+    opacity: $opacity;
+  }
+}

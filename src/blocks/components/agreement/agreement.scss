@@ -1,0 +1,50 @@
+.agreement {
+    display: none;
+    max-width: 537px;
+    width: 100%;
+}
+
+.agreement_active {
+    display: block;
+}
+.agreement__title {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 54px;
+    color: #FFFFFF;
+    margin-bottom: 36px;
+}
+.agreement__content {
+    max-height: 420px;
+    height: 100%;
+    white-space: pre-line;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.simplebar-vertical {
+    background: #D8D8D8;
+    opacity: 0.2;
+    border-radius: 5px;
+}
+.simplebar-scrollbar {
+    max-height: 60px;
+    background: #FFFFFF;
+    &::before {
+        background: #FFFFFF;
+        left: 0;
+        right: 0;
+        opacity: 1;
+    }
+}
+.simplebar-track {
+    right: -35px;
+}
+.simplebar-track.simplebar-vertical {
+    width: 4px;
+}

@@ -1,0 +1,110 @@
+.activity {
+  padding: 0 $offsetMobil;
+  padding-top: 47px;
+  @media (min-width: 880px) {
+      padding: 0 $offset;
+      padding-top: 89px;
+  }
+}
+.activity__title {
+  max-width: 510px;
+  margin-bottom: 60px;
+  @media (min-width: $screen-md) {
+      margin-bottom: 75px;
+  }
+}
+.activity__scheme {
+  @include ul-none();
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f7fa;
+  @media (min-width: $screen-lg) {
+      flex-direction: row;
+      align-items: flex-start;
+  }
+}
+
+.activity__scheme-item-pic {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  margin-bottom: 23px;
+  fill: none;
+  @media (min-width: $screen-xl) {
+      width: 84px;
+      height: 84px;
+  }
+}
+.activity__scheme-item {
+  background-color: #f4f7fa;
+  align-items: center;
+  max-width: 140px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 19px 21px 19px;
+  border-radius: 4px 0px 0px 4px;
+  @media (min-width: $screen-lg) {
+      align-self: stretch;
+      align-items: flex-start;
+      padding: 40px 19px 21px 0;
+  }
+  &::after {
+      content: "";
+      z-index: 2;
+      position: absolute;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-left: 20px solid $black;
+      @media (max-width: $screen-lg) {
+          transform: translateX(-50%) rotate(90deg);
+          left: 50%;
+          bottom: -10px;
+      }
+      @media (min-width: $screen-lg) {
+          top: 84px;
+          right: -10px;
+      }
+  }
+  &:last-child::after {
+      content: "";
+      display: none;
+      z-index: -2;
+  }
+}
+.activity__scheme-item-title {
+  margin-bottom: 21px;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 25px;
+  color: $main-color;
+}
+.activity__scheme-item-desc {
+  text-align: center;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: $main-color;
+  @media (min-width: $screen-lg) {
+      line-height: 20px;
+  }
+}
+.activity__scheme-item_bg {
+  padding: 50px 19px 50px 19px;
+  align-items: center;
+  max-width: 100%;
+  width: 100%;
+  @media (min-width: $screen-lg) {
+      padding: 40px 19px 21px 19px;
+      max-width: 234px;
+      align-items: center;
+  }
+}

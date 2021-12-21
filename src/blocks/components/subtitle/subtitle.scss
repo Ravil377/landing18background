@@ -1,0 +1,29 @@
+.subtitle__heading {
+    text-align: center;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    color: $main-color;
+    margin-bottom: 19px;
+    @media (min-width: $screen-md) {
+        font-size: 42px;
+        line-height: 48px;
+    }
+}
+
+.subtitle__desc {
+    margin: 0;
+    text-align: center;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: $black;
+    @media (min-width: $screen-md) {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}

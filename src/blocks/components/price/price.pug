@@ -1,0 +1,11 @@
+mixin price()
+    .price 
+        .price__title.js-price__title
+        form(action='/', method='POST', data-name="price").price__form.js-submit__btn
+            input(type="text", placeholder="Name").price__input
+            input(type="text", placeholder="Company, industry").price__input
+            input(type="text", placeholder="Phone or e-mail").price__input
+            input(type="text", placeholder="A comment").price__input
+            .price__bottom
+                +btn('Request a price', type="submit").price__btn
+                .price__agreement By submitting the form, you agree to the terms of the offer

@@ -1,0 +1,115 @@
+.language {
+  margin-top: auto;
+  margin-bottom: auto;
+  position: relative;
+  display: block;
+}
+
+.language__select-head {
+  display: none;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  color: #FFFFFF;
+  cursor: pointer;
+  padding-right: 23px;
+  @media (min-width: $screen-xl) {
+    display: block;
+  }
+  @media (min-width: $screen-xxl) {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: block;
+    width: 10px;
+    height: 2px;
+    transition: all 0.3s ease-out;
+    background-color: #FFBB4D;
+    transform: translate(-3px, -50%) rotate(45deg);
+  }
+  &::after {
+    transform: translate(3px, -50%) rotate(-45deg);
+  }
+}
+
+.language__select-head.open::after {
+  transform: translate(-3px, -50%) rotate(-45deg);
+}
+.language__select-head.open::before {
+  transform: translate(3px, -50%) rotate(45deg);
+}
+.language__select-list {
+  @include ul-none();
+  display: flex;
+  background: #034F79;
+  position: absolute;
+  border-radius: 2px;
+  width: 100%;
+  padding: 4px;
+  @media (min-width: $screen-xl) {
+    padding: 0;
+    display: none;
+    background: none;
+  }
+}
+.language__select-list_active {
+  display: block;
+}
+.language__select-list::-webkit-scrollbar {
+  width: 7px;
+  background-color: #F8F9FA;
+  padding: 5px 0;
+}
+
+.language__select-list::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #D9D9D9;
+}
+
+// .language__select-list .language__select-item {
+//   position: relative;
+//   padding: 5px;
+//   cursor: pointer;
+//   list-style-type: none;
+// }
+
+.language__select-list .slanguage__select-item:hover {
+  background-color: rgba(224, 229, 231, 0.5);
+}
+.language__select-item {
+  padding: 5px;
+  cursor: pointer;
+  text-align: center;
+  width: 50%;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  color: #FFFFFF;
+  transition: $time;
+  @media (min-width: $screen-xl) {
+    text-align: left;
+    width: auto;
+  }
+  &:hover, :active {
+    background: #FFBB4D;
+    border-radius: 2px;
+    color: #000;
+  }
+}
+.language__select-item_active {
+  background: #FFBB4D;
+  border-radius: 2px;
+  color: #000;
+}

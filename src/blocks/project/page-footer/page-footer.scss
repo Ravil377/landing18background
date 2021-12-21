@@ -1,0 +1,242 @@
+.footer {
+  background: $main-color;
+  padding: 0 $offsetMobil;
+  padding-top: 71px;
+  padding-bottom: 52px;
+  @media (min-width: $screen-md) {
+      padding: 0 $offset;
+      padding-top: 71px;
+      padding-bottom: 52px;
+  }
+}
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  @media (min-width: $screen-md) {
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;  
+  }
+}
+.footer__left {
+  max-width: 285px;
+  margin-bottom: 0;
+  @media (min-width: $screen-md) {
+    margin-bottom: 40px;
+  }
+}
+
+.footer__right {
+  display: none;
+  flex-direction: column;
+  @media (min-width: $screen-md) {
+    flex-direction: row;
+    display: flex;
+  }
+}
+
+.footer__right_mobil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (min-width: $screen-md) {
+    display: none;  
+    align-items: flex-start;
+  }
+}
+
+.footer__agreement {
+  text-align: center;
+  margin-bottom: 40px;
+  order: 2;
+  @media (min-width: $screen-md) {
+    order: 1;
+    text-align: left;
+    margin-right: 55px;
+    margin-bottom: 0;
+  }
+  a {
+    display: block;
+    text-decoration: none;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+    transition: $time;
+    @media (min-width: $screen-md) {
+      margin-bottom: 6px;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &:hover {
+      opacity: $opacity;
+    }
+  }
+}
+.footer__socials {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  min-width: 166px;
+  display: flex;
+}
+
+.footer__logo-container {
+  display: inline-block;
+  height: 71px;
+  margin-bottom: 48px;
+  @media (min-width: $screen-md) {
+    transform: translateX(-18px);
+    width: 245px;
+    margin-bottom: 24px;
+  }
+  a {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+  }
+}
+
+.footer__logo {
+  width: 100%;
+  height: 100%;
+}
+
+.footer__logo-text {
+  display: none;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+  @media (min-width: $screen-md) {
+    display: block;
+  }
+}
+
+.footer__copyright {
+  margin: 0 auto;
+  max-width: 178px;
+  text-align: center;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(210, 221, 233, 1);
+  margin-bottom: 0;
+  @media (min-width: $screen-md) {
+    margin: 0;
+    max-width: 100%;
+    text-align: left;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.footer__menu-title {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+  margin-bottom: 17px;
+}
+
+.footer__social-menu {
+  margin-bottom: 53px;
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media (min-width: $screen-md) {
+    order: 2;
+    margin-bottom: 0;
+  }
+}
+
+.footer__social {
+  width: 52px;
+  height: 52px;
+  margin-right: 28px;
+  @media (min-width: $screen-md) {
+    margin-right: 40px;
+    width: 28px;
+    height: 28px;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.footer__social-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: $time;
+  &:hover {
+      opacity: $opacity;
+  }
+}
+
+.footer__img {
+  width: 30px;
+  height: 30px;
+  @media (min-width: $screen-md) {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.footer__img_in {
+  fill: white;
+}
+
+.footer__nav {
+  margin-bottom: 60px;
+  @media (min-width: $screen-md) {
+    display: none;
+  }
+}
+
+.footer__list  {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__item {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  margin-bottom: 36px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: $time;
+    cursor: pointer;
+    &:hover {
+      opacity: $opacity;
+    }
+  }
+}
+

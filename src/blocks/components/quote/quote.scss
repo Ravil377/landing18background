@@ -1,0 +1,83 @@
+.blockquote__container {
+    max-width: 885px;
+    width: 100%;
+    // margin-left: -12px;
+    // margin-right: -12px;
+    // padding-left: 12px;
+    // padding-right: 12px;
+    position: relative;
+    // background: #B6B6B6;
+    padding-top: 66px;
+    padding-bottom: 0;
+    //margin-bottom: 52px;
+    @media (min-width: $screen-md) {
+        margin: 0 auto;
+        padding-left: 95px;
+        padding-right: 95px;
+        background: none;
+        padding-top: 0;
+        //margin-bottom: 103px;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 10px;
+        width: 43px;
+        height: 37px;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 46 39' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.7367 19.32C16.4967 20.04 17.8567 21.2 18.8167 22.8C19.8567 24.32 20.3767 26.16 20.3767 28.32C20.3767 31.2 19.4567 33.56 17.6167 35.4C15.7767 37.24 13.4967 38.16 10.7767 38.16C7.89672 38.16 5.53672 37.24 3.69672 35.4C1.85672 33.56 0.936719 31.2 0.936719 28.32C0.936719 26.88 1.09672 25.48 1.41672 24.12C1.81672 22.76 2.53672 20.72 3.57672 18L9.93672 0.959995H19.5367L14.7367 19.32ZM40.1767 19.32C41.9367 20.04 43.2967 21.2 44.2567 22.8C45.2967 24.32 45.8167 26.16 45.8167 28.32C45.8167 31.2 44.8967 33.56 43.0567 35.4C41.2167 37.24 38.9367 38.16 36.2167 38.16C33.3367 38.16 30.9767 37.24 29.1367 35.4C27.2967 33.56 26.3767 31.2 26.3767 28.32C26.3767 26.88 26.5367 25.48 26.8567 24.12C27.2567 22.76 27.9767 20.72 29.0167 18L35.3767 0.959995H44.9767L40.1767 19.32Z' fill='%23B6B6B6'/%3E%3C/svg%3E%0A");
+        @media (min-width: $screen-md) {
+            width: 55px;
+            height: 47px;
+            left: 35px;
+            top: 0;
+        }
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        right: 50%;
+        bottom: 20%;
+        width: 43px;
+        height: 37px;
+        transform: rotate(180deg) translateX(-50%);
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 46 39' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.7367 19.32C16.4967 20.04 17.8567 21.2 18.8167 22.8C19.8567 24.32 20.3767 26.16 20.3767 28.32C20.3767 31.2 19.4567 33.56 17.6167 35.4C15.7767 37.24 13.4967 38.16 10.7767 38.16C7.89672 38.16 5.53672 37.24 3.69672 35.4C1.85672 33.56 0.936719 31.2 0.936719 28.32C0.936719 26.88 1.09672 25.48 1.41672 24.12C1.81672 22.76 2.53672 20.72 3.57672 18L9.93672 0.959995H19.5367L14.7367 19.32ZM40.1767 19.32C41.9367 20.04 43.2967 21.2 44.2567 22.8C45.2967 24.32 45.8167 26.16 45.8167 28.32C45.8167 31.2 44.8967 33.56 43.0567 35.4C41.2167 37.24 38.9367 38.16 36.2167 38.16C33.3367 38.16 30.9767 37.24 29.1367 35.4C27.2967 33.56 26.3767 31.2 26.3767 28.32C26.3767 26.88 26.5367 25.48 26.8567 24.12C27.2567 22.76 27.9767 20.72 29.0167 18L35.3767 0.959995H44.9767L40.1767 19.32Z' fill='%23B6B6B6'/%3E%3C/svg%3E%0A");
+        @media (min-width: $screen-md) {
+            width: 55px;
+            height: 47px;
+            right: 28px;
+            top: 0;
+        }
+    }
+  }
+  .blockquote__quote {
+    font-family: "Fira Sans";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 102px;
+    color: #808080;
+    text-align: center;
+    margin-bottom: 80px;
+    @media (min-width: $screen-md) {
+        font-size: 38px;
+        line-height: 52px;
+        margin-bottom: 35px;
+    }
+  }
+.blockquote__signature {
+    margin: 0 auto;
+    max-width: 422px;
+    font-family: "PT Sans";
+    font-style: normal;
+    font-size: 16px;
+    line-height: 23px;
+    color: #808080;
+    text-align: center;
+    @media (min-width: $screen-md) {
+        font-size: 28px;
+        line-height: 39px;
+    }
+}

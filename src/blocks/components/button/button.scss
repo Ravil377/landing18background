@@ -1,0 +1,26 @@
+.btn {
+  border: none;
+  height: fit-content;
+  border-radius: 2px;
+  background: #FFBB4D;
+  padding: 10px 22px;
+  color: #013554;
+  font-family: "PT Sans";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  transition: $time;
+  cursor: pointer;
+  @media (min-width: $screen-xxl) {
+    font-size: .87rem;
+    line-height: 1.18rem;
+    padding: .62rem 1.37rem;
+  }
+  &:hover {
+    background: #FF9E00;
+  }
+  &:active {
+    background: #EB9100;
+  }
+}

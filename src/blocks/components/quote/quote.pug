@@ -1,0 +1,9 @@
+mixin blockquote(blockquote, signature)
+  -
+    var blockquote = blockquote || '';
+    var signature = signature || '';
+
+  .blockquote&attributes(attributes)               
+    figure.blockquote__container
+        blockquote.blockquote__quote!= blockquote
+        figcaption.blockquote__signature!= signature

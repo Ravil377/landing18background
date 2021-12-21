@@ -1,0 +1,38 @@
+mixin page-background()
+    .container
+        p.container__text.container__text_top Hot
+        p.container__text.container__text_center Portugal
+        p.container__text.container__text_center-1 Portugal
+        p.container__text.container__text_bottom Baby
+        .container__overlay
+            .logo 
+                svg(class='logo__img')
+                    use(xlink:href='img/symbols.svg#logo')
+            .sidebar__left
+                form(action="/" method="POST").form
+                    p.title__small Are You Ready for
+                    h1.title Flirty Chat
+                    p.title__small.title__small_right with brazil ladies?
+                    .placeholder-container
+                        input(type="email" placeholder=" " required)
+                        label Enter your email
+                    .placeholder-container
+                        input(type="password" placeholder=" " required)
+                        label Enter your password
+                    button(type="submit").button Sign up
+                    button.button.button_mobil.js-button-signin Sign up
+            .sidebar__right
+                .girl__container
+                
+            .footer
+                ul.term-list
+                    li.term__item
+                        a(href="#").term__link Desabonarse
+                    li.term__item
+                        a(href="#").term__link Política de privacidad 
+                    li.term__item
+                        a(href="#").term__link Términos y condiciones
+            <template id="girl">
+                img(id="" src="" alt="Girl").girl__image
+            </template> 
+            

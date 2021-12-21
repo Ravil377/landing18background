@@ -1,0 +1,49 @@
+.title {
+  margin: 0 auto;
+  max-width: 765px;
+  color: $main-color;
+}
+.title__category {
+  text-align: center;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: inherit;
+  margin-bottom: 9px;
+  @media (min-width: $screen-md) {
+    font-size: 16px;
+  }
+}
+.title__category_blue {
+  color: $main-color;
+}
+.title__heading {
+  text-align: center;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+  color: inherit;
+  margin-bottom: 24px;
+
+  @media (min-width: $screen-md) {
+    font-size: 42px;
+    line-height: 48px;
+  }
+}
+.title__desc {
+  text-align: center;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: black;
+  margin: 0;
+  @media (min-width: $screen-md) {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}

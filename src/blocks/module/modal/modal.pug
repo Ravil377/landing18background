@@ -1,0 +1,12 @@
+mixin modal()
+    .modal&attributes(attributes)
+            .modal__container
+                form(action="/" method="POST").form
+                    p.modal__title Sign up to сontinue...
+                    .placeholder-container
+                        input(type="email" placeholder=" " required)
+                        label Enter your email
+                    .placeholder-container
+                        input(type="password" placeholder=" " required)
+                        label Enter your password
+                    button(type="submit").button Sign up

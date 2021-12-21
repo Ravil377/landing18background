@@ -1,0 +1,9 @@
+mixin burger(isCloseBtn)
+  -
+    var isCloseBtn = isCloseBtn || false
+
+  if !isCloseBtn
+    .menu__burger&attributes(attributes)
+      span.menu__burger-center
+  else
+    .menu__burger-close-btn

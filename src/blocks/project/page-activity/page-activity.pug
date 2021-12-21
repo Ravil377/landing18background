@@ -1,0 +1,88 @@
+mixin page-activity()
+  section(id="activity").activity
+    .container
+      .content
+        +title('What we do', `End-to-end services`, 'We configure our business around our customers’ needs. Our services add value at every stage of the supply chain').activity__title
+        ul.activity__scheme
+          li.activity__scheme-item.activity__scheme-item_bg
+            svg(class=`activity__scheme-item-pic`)
+              use(xlink:href="img/symbols.svg#purchase")
+            .activity__scheme-item-title Purchase
+            .activity__scheme-item-desc We have long-term relationships with leading petrochemical producers and refining companies. We use hedging, financial tools and logistical solutions to secure stable supplies
+          li.activity__scheme-item.activity__scheme-item_bg
+            svg(class=`activity__scheme-item-pic`)
+              use(xlink:href="img/symbols.svg#storage")
+            .activity__scheme-item-title Store
+            .activity__scheme-item-desc We store products in terminals of the largest ports such as Wibax (Finland), Solventas (Turkey), Safiport (Turkey) and Ak-tas (Turkey)
+          li.activity__scheme-item.activity__scheme-item_bg
+            svg(class=`activity__scheme-item-pic`)
+              use(xlink:href="img/symbols.svg#barreling")
+            .activity__scheme-item-title Drumming
+            .activity__scheme-item-desc We work with any volumes and businesses of any size, we pack products in metal barrels and ship them in batches of the sizes that customers need
+          li.activity__scheme-item.activity__scheme-item_bg
+            svg(class=`activity__scheme-item-pic`)
+              use(xlink:href="img/symbols.svg#ship")
+            .activity__scheme-item-title Deliver
+            .activity__scheme-item-desc We trade on a flexible basis, delivering the petrochemicals to the point that the client needs. Petrochemicals are delivered all over the world by sea, by rail, by trucks, including door-to-door
+          li.activity__scheme-item.activity__scheme-item_bg
+            svg(class=`activity__scheme-item-pic`)
+              use(xlink:href="img/symbols.svg#profit")
+            .activity__scheme-item-title Financing
+            .activity__scheme-item-desc Our business model prioritises resilience and prudent risk management. We have the financial capabilities and expertise to operate effectively in volatile markets
+          //- li.activity__scheme-item
+          //-   svg(class=`activity__scheme-item-pic`)
+          //-     use(xlink:href="img/symbols.svg#profit")
+          //-   .activity__scheme-item-title Прибыль
+        //- .activity__cost-containter
+        //-   h3.activity__subtitle.activity__costs-title Создание стоимости
+        //-   ul.activity__costs
+        //-     li.activity__cost
+        //-       .activity__cost-image-containter
+        //-         .activity__cost-image-overlay
+        //-         img(src="img/content/commands.jpg" alt='Международная команда').activity__cost-image
+        //-       .activity__cost-title Международная команда
+        //-       .activity__cost-desc Мы на международном рынке торговли нефтепродуктами более 25 лет. Мы торгуем по всему миру. Наши филиалы находятся в России, странах СНГ, Турции, Китае, Индии и Европе. Наши трейдеры обладают глубокой компетенцией и высокой репутацией на рынках сбыта.
+        //-     li.activity__cost
+        //-       .activity__cost-image-containter
+        //-         .activity__cost-image-overlay
+        //-         img(src="img/content/truba.jpg" alt='Управление затратами').activity__cost-image
+        //-       .activity__cost-title Управление затратами
+        //-       .activity__cost-desc Мы постоянно работаем над улучшением логистических процессов и поставок, оптимизацией стоимости и сроков.  Наша ERP-система позволяет управлять транзакциями на всех этапах — от планирования до своевременной поставки.
+        //-     li.activity__cost
+        //-       .activity__cost-image-containter
+        //-         .activity__cost-image-overlay
+        //-         img(src="img/content/manager.jpg" alt='Управление рисками').activity__cost-image
+        //-       .activity__cost-title Управление рисками
+        //-       .activity__cost-desc Большинство сделок застрахованы ведущими страховыми компаниями Европы, покрывая риски на всех этапах сделки. Мы используем различные инструменты для факторинга, хеджирования товарных и валютных рисков.
+        //-     li.activity__cost
+        //-       .activity__cost-image-containter
+        //-         .activity__cost-image-overlay
+        //-         img(src="img/content/activs.jpg" alt='Стратегические активы').activity__cost-image
+        //-       .activity__cost-title Стратегические активы
+        //-       .activity__cost-desc Мы инвестировали в терминал по перевалке сжиженного нефтяного газа на границе России и Китая. Терминал запущен в 2019 году. Текущая мощность терминала — 1,05 млн тонн в год с возможностью увеличения до 2,5 млн тонн в год.
+        //- .activity__partners
+        //-   h3.activity__subtitle.activity__partners-title Партнеры
+        //-   .activity__partners-block
+        //-     .activity__partners-containter.activity__swiper
+        //-       ul.activity__partners-list.swiper-wrapper
+        //-         li.activity__partners-item.swiper-slide
+        //-           img(src="img/content/omnova.png" alt='Omnova').activity__partners-item-img
+        //-         li.activity__partners-item.swiper-slide
+        //-           img(src="img/content/rosneft.png" alt='rosneft').activity__partners-item-img
+        //-         li.activity__partners-item.swiper-slide
+        //-           img(src="img/content/tatneft.png" alt='tatneft').activity__partners-item-img
+        //-         li.activity__partners-item.swiper-slide
+        //-           img(src="img/content/neste.png" alt='neste').activity__partners-item-img
+        //-         li.activity__partners-item.swiper-slide
+        //-           img(src="img/content/omnova.png" alt='omnova').activity__partners-item-img
+        //-         li.activity__partners-item.swiper-slide
+        //-           img(src="img/content/rosneft.png" alt='rosneft').activity__partners-item-img
+        //-         li.activity__partners-item.swiper-slide
+        //-           img(src="img/content/tatneft.png" alt='tatneft').activity__partners-item-img
+        //-         li.activity__partners-item.swiper-slide
+        //-           img(src="img/content/neste.png" alt='neste').activity__partners-item-img
+        //-     .activity__partners-pagination.swiper-pagination
+        //-     .activity__partners-right.swiper-button-next
+        //-     .activity__partners-left.swiper-button-prev
+              
+

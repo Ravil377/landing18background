@@ -1,0 +1,118 @@
+mixin page-contacts()
+    section(id="contacts").contacts
+        .container
+            .content
+                +title('', 'Contacts', `If you have any questions, please fill in our contact form below. If you have an inquiry for one of our products, please request the price in the Products sections. Specify the desired product, the quantity, the destination and transport conditions in the contact form. We will then send you a quotation as soon as possible, with no obligation`).contacts__title
+                .contacts__form-container
+                    form(action='/', method='POST').contacts__form.js-submit__form
+                        label.contacts__label Name *
+                            input(type="text" required name="name").contacts__input
+                        label.contacts__label Telephone number *
+                            input(type="tel" required name="tel").contacts__input
+                        label.contacts__label Company *
+                            input(type="text" required name="company").contacts__input
+                        label.contacts__label E-mail *
+                            input(type="email" required name="email").contacts__input
+                        label.contacts__label.contacts__label-message Message *
+                            textarea(type="textarea" required name="Message").contacts__input.contacts__input-message
+                        label.contacts__input-wrapper
+                            input(name="file", type='file').contacts__input-file
+                            span.contacts__file-content
+                                //- span.contacts__file-mobil Upload a photo or file
+                                span.contacts__file-text Drag and drop the file here or
+                                span.contacts__file-btn Upload
+                            span.contacts__file
+                        .contacts__bottom
+                            +btn('SEND', type="submit").contacts__btn
+                            //- .contacts__agreement Отправляя форму, вы соглашаетесь с условиями оферты
+                .contacts__office-container
+                    h3.contacts__office-title Offices
+                    ul.contacts__office-list
+                        li.contacts__office-item
+                            div(data-id="cyprus").contacts__office-item-title
+                                img(src="img/content/cyprus.png", alt="Cyprus, Limassol").contacts__office-item-img
+                                | Cyprus, Limassol
+                            .contacts__office-item-content
+                                p.contacts__office-item-text Avestra Chemical Services OY
+                                p.contacts__office-item-adress Hristodoyloy Hatzipayloy, 205, LOULOUPIS COURT, Floor 2, Flat 201, 3036
+                                a(href="tel:+912228056653").contacts__office-item-tel +91 (222) 805-66-53
+                        li.contacts__office-item
+                            div(data-id="finland").contacts__office-item-title
+                                img(src="img/content/finland.png", alt="Finland, Helsinki").contacts__office-item-img
+                                | Finland, Helsinki
+                            .contacts__office-item-content
+                                p.contacts__office-item-text Avestra Chemical Services OY
+                                p.contacts__office-item-adress 605, 6th Floor, Aura Biplex, S.V. Road, Opp. Sumer Nagar, Above Kalyan Jewellers Borivali 400092
+                                a(href="tel:+912228056653").contacts__office-item-tel +91 (222) 805-66-53
+                        li.contacts__office-item
+                            div(data-id="russia").contacts__office-item-title
+                                img(src="img/content/russia.png", alt="Russia").contacts__office-item-img
+                                | Russia, Moscow
+                            .contacts__office-item-content
+                                p.contacts__office-item-text Avestra Chemical Services OY
+                                p.contacts__office-item-adress Donskaya street, 15B, 15th floor, 382670
+                                a(href="tel:+74958056653").contacts__office-item-tel +7 (495) 805-66-53
+                        li.contacts__office-item
+                            div(data-id="russia").contacts__office-item-title
+                                img(src="img/content/russia.png", alt="Russia").contacts__office-item-img
+                                | Russia, St. Petersburg
+                            .contacts__office-item-content
+                                p.contacts__office-item-text Avestra Chemical Services OY
+                                p.contacts__office-item-adress Petrogradskaya emb. 18A, 5th floor, 197046
+                                a(href="tel:+78123200030").contacts__office-item-tel +7 (812) 320-00-30
+                        li.contacts__office-item
+                            div(data-id="india").contacts__office-item-title
+                                img(src="img/content/india.png", alt="India, Mumbai").contacts__office-item-img
+                                | India, Mumbai
+                            .contacts__office-item-content
+                                p.contacts__office-item-text Avestra Chemical (India) Pte. Ltd.
+                                p.contacts__office-item-adress 605, 6th Floor, Aura Biplex, S.V. Road, Opp. Sumer Nagar, Above Kalyan Jewellers Borivali 400092
+                                a(href="tel:+912228056653").contacts__office-item-tel +91 (222) 805-66-53
+                        li.contacts__office-item
+                            div(data-id="china").contacts__office-item-title
+                                img(src="img/content/china.png", alt="China, Beijing").contacts__office-item-img
+                                | China, Beijing
+                            .contacts__office-item-content
+                                p.contacts__office-item-text Avestra (Beijing) Chemical Commerce Trading Co., Ltd
+                                p.contacts__office-item-adress Room No. A-016, F4, China CBD Teda TimesCenter, N15, Guangha Road 100026
+                                a(href="tel:+861085886712").contacts__office-item-tel +86 (108) 588-67-12
+                        li.contacts__office-item
+                            div(data-id="turkey").contacts__office-item-title
+                                img(src="img/content/turkey.png", alt="Turkey, Istanbul").contacts__office-item-img
+                                | Turkey, Istanbul
+                            .contacts__office-item-content
+                                p.contacts__office-item-text Avestra Chemical (India) Pte. Ltd.
+                                p.contacts__office-item-adress Sisli Ilcesi Esentepe Mahallesi Kore Sehitleri Caddesi Park Apt. No. 37: K:2 D:6 Zincirlikuyu Sisili
+                                a(href="tel:+902122880293").contacts__office-item-tel +90 (212) 288-02-93
+                        li.contacts__office-item
+                            div(data-id="uae").contacts__office-item-title
+                                img(src="img/content/uae.png", alt="UAE, Dubai").contacts__office-item-img
+                                | UAE, Dubai
+                            .contacts__office-item-content
+                                p.contacts__office-item-text Avestra Chemical DMCC
+                                p.contacts__office-item-adress Jumeirah Lakes Tower, Fortune Executive Tower, office 1806, P.O. Box 390622
+                                a(href="tel:+971559852868").contacts__office-item-tel +97 (155) 985-28-68
+                        li.contacts__office-item
+                            div(data-id="switzerland").contacts__office-item-title
+                                img(src="img/content/switzerland.png", alt="Switzerland, Geneva").contacts__office-item-img
+                                | Switzerland, Geneva
+                            .contacts__office-item-content
+                                p.contacts__office-item-text Avestra Chemical (India) Pte. Ltd.
+                                p.contacts__office-item-adress Sisli Ilcesi Esentepe Mahallesi Kore Sehitleri Caddesi Park Apt. No. 37: K:2 D:6 Zincirlikuyu Sisili
+                                a(href="tel:+912228056653").contacts__office-item-tel +91 (222) 805-66-53
+                        li.contacts__office-item
+                            div(data-id="poland").contacts__office-item-title
+                                img(src="img/content/poland.png", alt="Poland, Warsaw").contacts__office-item-img
+                                | Poland, Warsaw
+                            .contacts__office-item-content
+                                p.contacts__office-item-text Avestra Chemical DMCC
+                                p.contacts__office-item-adress Jumeirah Lakes Tower, Fortune Executive Tower, office 1806, P.O. Box 390622
+                                a(href="tel:+971559852868").contacts__office-item-tel +97 (155) 985-28-68
+                        li.contacts__office-item
+                            div(data-id="singapore").contacts__office-item-title
+                                img(src="img/content/singapore.png", alt="Singapore").contacts__office-item-img
+                                | Singapore
+                            .contacts__office-item-content
+                                p.contacts__office-item-text Avestra Chemical (India) Pte. Ltd.
+                                p.contacts__office-item-adress Sisli Ilcesi Esentepe Mahallesi Kore Sehitleri Caddesi Park Apt. No. 37: K:2 D:6 Zincirlikuyu Sisili
+                                a(href="tel:+912228056653").contacts__office-item-tel +91 (222) 805-66-53

@@ -1,0 +1,55 @@
+mixin page-header()
+  header.header
+      .header__container
+            .header__overlay
+                  .header__top
+                    .header__logo-container
+                      svg(class=`header__logo-img`)
+                        use(xlink:href="img/symbols.svg#logo")
+                    +burger().menu__burger
+
+                    nav.header__menu-container
+                      .header__burger-logo
+                        svg(class=`header__logo`)
+                          use(xlink:href="img/symbols.svg#logo")
+                        +burger(true).menu__burger-close-btn
+                      ul.header__menu.menu
+                        li.menu__item
+                          a(href="#about").menu__link Who we are
+                        li.menu__item
+                          a(href="#activity").menu__link What we do
+                        li.menu__item
+                          a(href="#products").menu__link Products
+                        li.menu__item
+                          a(href="#invest").menu__link Investments
+                        li.menu__item
+                          a(href="#career").menu__link Career
+                        li.menu__item
+                          a(href="#contacts").menu__link Contacts
+                      //- +language().header__language
+                      +btn('Contact us').header__button.js-header-button
+                  .header__title-container
+                    svg(class=`header__linking-img`)
+                      use(xlink:href="img/symbols.svg#linking")
+                    h1.header__title.animate__animated.animate__fadeInLeft International trading without barriers and borders
+                    p.header__description.animate__animated.animate__fadeInUp AVESTRA is a supplier of petrochemical products to international markets. We provide a wide range of trade and logistics services from cargo to sea
+                      | transportation and operate in different volumes: from several tons to several tens of thousands of tons
+                  .header__bottom
+                    ul.header__list
+                      li.header__item.animate__animated.animate__fadeIn
+                        svg(class=`header__item-pic`)
+                          use(xlink:href="img/symbols.svg#medal")
+                        p 25 years on the market
+                      li.header__item.animate__animated.animate__fadeIn
+                        svg(class=`header__item-pic`)
+                          use(xlink:href="img/symbols.svg#world")
+                        p Strong relationships with suppliers 
+                      li.header__item.animate__animated.animate__fadeIn
+                        svg(class=`header__item-pic`)
+                          use(xlink:href="img/symbols.svg#subtract")
+                        p High-quality products 
+                      li.header__item.animate__animated.animate__fadeIn
+                        svg(class=`header__item-pic`)
+                          use(xlink:href="img/symbols.svg#ring")
+                        p Reliable business-partner
+                  +btn('Contact us').header__button_btm.js-header-button

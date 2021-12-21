@@ -1,0 +1,32 @@
+mixin page-girls-slider()
+    .container__anim
+        .container
+            header.header
+                .header__title-container
+                    .header__tile Hot Latinas
+                    .header__title-shadow Hot Latinas
+                .header__desc are waiting for you 
+                button.header__button.js-join-now join now
+            main.main 
+                .swiper.slider__container 
+                    button.slider__button.js-slider-prev
+                        .slider__button-arrow
+                    button.slider__button.slider__button_right.js-slider-next
+                        .slider__button-arrow
+                    ul.swiper-wrapper.slider__list
+            
+            footer.footer
+                a(href="#").footer__copyright Amigas Lindas © 2021
+                ul.footer__term-list
+                    li.footer__term-item
+                        a(href="#").footer__term-link Desabonarse
+                    li.footer__term-item
+                        a(href="#").footer__term-link Política de privacidad 
+                    li.footer__term-item
+                        a(href="#").footer__term-link Términos y condiciones
+            <template id="card">
+                li.swiper-slide.slider__item.lazy
+                    img(src="./img/content/1x1.png" alt="" data-src="").slider__item-img
+                    p.slider__desc
+            </template> 
+

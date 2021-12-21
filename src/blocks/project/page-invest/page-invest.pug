@@ -1,0 +1,33 @@
+mixin page-invest()
+  section(id="invest").invest
+    .container
+      .content
+        +title('Investments', `Manzhouli Far East Gases Co. Ltd`, 'The Manzhouli Far East Gas terminal is located at the Zabaikalsk - Manchuria border railway crossing and is currently the only operating channel for large-scale LPG export from the Russian Federation to China. LPG supplies began in August 2019. The total capacity of the terminal by the end of 2022 will reach 3 (three) million tons per year').invest__title
+        .invest__container
+            .invest__video
+                .invest__video-close
+                video(controls).invest__video-player.js-invest__video-player
+                    source(src='/video/huge.mp4' type='video/mp4')
+            .invest__parametrs
+                .invest__item
+                    .invest__item-title First stage capacity <span>1.0 million tons of LPG per year:</span>
+                    ul.invest__item-lists 
+                        li 10 transit spherical tanks, 2000 m3 each
+                        li 2 raliway lines (1520 and 1435 mm) with a total length of 5.8 km
+                        li Special ramp 840 meters long for 117 places for unloading
+                        li 30 places for automatic loading of vehicles
+                .invest__item
+                    .invest__item-title Second stage capacity <span>2.0 million tons of LPG per year:</span>
+                    ul.invest__item-lists 
+                        li 12 transit spherical tanks, 2000m3 each
+                        li 2 additional railway lines with a wide track of 1520 mm
+                        li Unloading platform for 140 tank wagons
+                        li 50 sphear tanks of 4000 m3 each for simultaneous storage of more than 100 thousand tons of LPG
+                        li Construction start date - Q3 2021
+                        li Completion date - Q4 2022
+            .invest__presentation
+                .invest__link-content
+                    svg(class=`invest__link-img`)
+                        use(xlink:href="img/symbols.svg#video")
+                    .invest__link-content-text.invest__link-content-text_uppercase PRESENTATION
+                    .invest__link-content-text Watch the video
