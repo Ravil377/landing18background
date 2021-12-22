@@ -4,6 +4,7 @@
 })((function () { 'use strict';
 
     const button = document.querySelector('.js-button-signin');
+    const buttonClose = document.querySelector('.js-button-close');
     document.querySelectorAll('.girl__image');
     const containerImage = document.querySelector('.sidebar__right');
     const template = document.querySelector('#girl');
@@ -39,6 +40,7 @@
 
     loadCards(containerImage, newGirls);
     button.addEventListener('click', () => modal.classList.add('modal_opened'));
+    buttonClose.addEventListener('click', () => modal.classList.remove('modal_opened'));
     document.addEventListener('DOMContentLoaded', function () {
       const addActive = (elem, reverse = true) => {
         if (reverse) {
